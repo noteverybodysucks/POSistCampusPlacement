@@ -1,0 +1,46 @@
+#include <iostream>
+#include <ctime>
+using namespace std;
+int nodeNumber = 0;
+int sumBelowGenesis = 0;
+bool genesisCreated = false;
+
+struct node{
+    string timestamp;
+    string data;
+    int nodeN;
+    string nodeId;
+    string rNodeId;
+    string childRNodeId;
+    string genRNodeId;
+    string hashSet;
+};
+
+void createGenesis(){
+    struct node root;
+    root.timestamp="<Current Time be Provided>";
+    
+    return;
+}
+
+struct node* genesisNode;
+
+int main() {
+    
+    {
+        cout<<"Choose one of the following:\n"<<endl;
+        cout<<"1. Create Genesis Node"<<endl;
+        cout<<"2. Create set of child nodes for a particular node"<<endl;
+        cout<<"3. Create a child node of a particular node"<<endl;
+        cout<<"4. Encrypt and Decrypt the data inside the node"<<endl;
+        cout<<"5. Verify the owner of the data"<<endl;
+        cout<<"6. Edit value of a node"<<endl;
+        cout<<"7. Transfer Ownership"<<endl;
+        cout<<"8. Longest Chain of Genesis"<<endl;
+        cout<<"9. Longest Chain of any Node"<<endl;
+        cout<<"10. Merge 2 nodes"<<endl;
+
+        int choice;
+        cin>>choice;
+    }
+}
